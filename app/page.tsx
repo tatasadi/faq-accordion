@@ -5,16 +5,21 @@ import AccordionItem from "./components/AccordionItem"
 
 export default function Home() {
   return (
-    <main className="flex max-w-[37.5rem] items-center justify-center p-6">
-      <div className="flex flex-col items-start gap-6 rounded-lg bg-white p-6 shadow-[0_32px_56px_0px_rgba(80,0,118,0.10)]">
+    <main className="flex max-w-[40rem] items-center justify-center p-6">
+      <div className="flex flex-col items-start gap-1 rounded-lg bg-white p-6 shadow-[0_32px_56px_0px_rgba(80,0,118,0.10)] lg:gap-4 lg:rounded-2xl lg:p-10">
         <div className="flex items-center justify-start gap-6">
-          <Image
-            src="/images/icon-star.svg"
-            width={24}
-            height={24}
-            alt="icon star"
-          />
-          <h1 className="text-[2rem] font-bold leading-normal">FAQs</h1>
+          <div className="h-6 w-6 lg:h-10 lg:w-10">
+            <Image
+              src="/images/icon-star.svg"
+              width={24}
+              height={24}
+              alt="icon star"
+              layout="responsive"
+            />
+          </div>
+          <h1 className="text-[2rem] font-bold leading-normal lg:text-[3.5rem]">
+            FAQs
+          </h1>
         </div>
         <div className="flex flex-col items-start">
           <Accordion>

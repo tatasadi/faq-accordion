@@ -14,7 +14,7 @@ const AccordionItem = ({
   <div className="border-light-pink w-full cursor-pointer border-b-[0.0625rem] last:border-b-0">
     <div
       onClick={onToggle}
-      className="hover:text-pink flex w-full items-center gap-6 py-5 font-semibold"
+      className="hover:text-pink flex w-full items-center gap-6 py-5 font-semibold lg:py-6 lg:text-lg"
     >
       <h3>{title}</h3>
       <Image
@@ -25,7 +25,9 @@ const AccordionItem = ({
         className="ml-auto"
       />
     </div>
-    {isOpen && <p className="text-grayish-purple pb-5">{children}</p>}
+    {isOpen && (
+      <p className="text-grayish-purple pb-5 lg:leading-6">{children}</p>
+    )}
   </div>
 )
 

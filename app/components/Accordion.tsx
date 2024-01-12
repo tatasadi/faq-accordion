@@ -7,7 +7,7 @@ import React, {
 } from "react"
 
 const Accordion = ({ children }: { children: React.ReactNode }) => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index)

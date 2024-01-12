@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${workSans.className} flex min-h-screen flex-col items-center justify-center`}
+        className={`${workSans.className} bg-light-pink text-dark-purple flex min-h-screen flex-col items-center justify-center bg-[url('/images/background-pattern-mobile.svg')] bg-contain bg-top bg-no-repeat lg:bg-[url('/images/background-pattern-desktop.svg')]`}
       >
         {children}
         <Reference />

@@ -16,7 +16,7 @@ const AccordionItem = ({
       onClick={onToggle}
       className="hover:text-pink flex w-full items-center gap-6 py-5 font-semibold lg:py-6 lg:text-lg"
     >
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       <Image
         width={30}
         height={30}
